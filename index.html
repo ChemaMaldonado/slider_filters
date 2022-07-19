@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sidebar</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+	<main>
+		<div class="main-container">
+      <div class="slider-filter">
+        <div class="slider-filter-content">
+          <div>
+            <p class="range-header">Precio</p>
+            <div class="slider">
+              <div class="progress"></div>
+            </div>
+            <div class="range-input">
+              <input type="range" class="range-min" min="0" max="10000" value="2500" step="10">
+              <input type="range" class="range-max" min="0" max="10000" value="7500" step="10">
+            </div>
+            <div class="price-input">
+              <div class="field">
+                <input type="number" class="input-min" value="100">
+              </div>
+              <div class="separator">-</div>
+              <div class="field">
+                <input type="number" class="input-max" value="200">
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <p class="brand-header">Marcas</p>
+            <div>
+              <div class="container">
+                <div class="form-container">
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="brand_1" />
+                    <label class="checkbox" for="brand_1">Apple Mac</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="brand_2" />
+                    <label class="checkbox" for="brand_2">Microsoft OS</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="brand_3" />
+                    <label class="checkbox" for="brand_3">Linux OS</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="brand_4" />
+                    <label class="checkbox" for="brand_4">Linux OS</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="brand_5" />
+                    <label class="checkbox" for="brand_5">Linux OS</label>
+                  </div>
+                  <div id="linux_4_container" class="checkbox-container" style="display: none;">
+                    <input type="checkbox" id="brand_6" />
+                    <label class="checkbox" for="brand_6">Linux OS</label>
+                  </div>
+                  <div id="linux_5_container" class="checkbox-container" style="display: none;">
+                    <input type="checkbox" id="brand_7" />
+                    <label class="checkbox" for="brand_7">Linux OS</label>
+                  </div>
+                  <div id="linux_6_container" class="checkbox-container" style="display: none;">
+                    <input type="checkbox" id="brand_8" />
+                    <label class="checkbox" for="brand_8">Linux OS</label>
+                  </div>
+                  <div id="linux_7_container" class="checkbox-container" style="display: none;">
+                    <input type="checkbox" id="brand_9" />
+                    <label class="checkbox" for="brand_9">Linux OS</label>
+                  </div>
+                </div>
+              </div>
+              <button id="show_more_brand">
+                Ver más
+              </button>
+            </div>
+          <div>
+            <p class="brand-header">Color</p>
+            <div>
+              <div class="container">
+                <div class="form-container">
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="color_1"/>
+                    <label class="checkbox" for="color_1">Dark grey</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="color_2"/>
+                    <label class="checkbox" for="color_2">White</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="color_3"/>
+                    <label class="checkbox" for="color_3">Black</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="color_4"/>
+                    <label class="checkbox" for="color_4">Dark blue</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div>
+            <p class="brand-header">Tamaño</p>
+            <div>
+              <div class="container">
+                <div class="form-container">
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="size_1"/>
+                    <label class="checkbox" for="size_1">Apple Mac</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="size_2"/>
+                    <label class="checkbox" for="size_3">Microsoft OS</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="size_3"/>
+                    <label class="checkbox" for="size_3">Linux OS</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="size_4"/>
+                    <label class="checkbox" for="size_4">Linux OS</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="size_5"/>
+                    <label class="checkbox" for="size_5">Linux OS</label>
+                  </div>
+                  <div id="linux_4_container_size" class="checkbox-container" style="display: none;">
+                    <input type="checkbox" id="size_6"/>
+                    <label class="checkbox" for="size_6">Linux OS</label>
+                  </div>
+                  <div id="linux_5_container_size" class="checkbox-container" style="display: none;">
+                    <input type="checkbox" id="size_7"/>
+                    <label class="checkbox" for="size_7">Linux OS</label>
+                  </div>
+                  <div id="linux_6_container_size" class="checkbox-container" style="display: none;">
+                    <input type="checkbox" id="size_8"/>
+                    <label class="checkbox" for="size_8">Linux OS</label>
+                  </div>
+                  <div id="linux_7_container_size" class="checkbox-container" style="display: none;">
+                    <input type="checkbox" id="size_9"/>
+                    <label class="checkbox" for="size_9">Linux OS</label>
+                  </div>
+                </div>
+              </div>
+              <button id="show_more_size">
+                Ver más
+              </button>
+            </div>
+          <div id="filter_3" style="display:none">
+            <p class="brand-header">Modelo</p>
+            <div>
+              <div class="container">
+                <div class="form-container">
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="model_1"/>
+                    <label class="checkbox" for="model_1">Apple Mac</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="model_2"/>
+                    <label class="checkbox" for="model_3">Microsoft OS</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="model_3"/>
+                    <label class="checkbox" for="model_3">Linux OS</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="model_4"/>
+                    <label class="checkbox" for="model_4">Linux OS</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="model_5"/>
+                    <label class="checkbox" for="model_5">Linux OS</label>
+                  </div>
+                  <div id="linux_4_container_model" style="display: none" class="checkbox-container">
+                    <input type="checkbox" id="model_6"/>
+                    <label class="checkbox" for="model_6">Linux OS</label>
+                  </div>
+                  <div id="linux_5_container_model" style="display: none" class="checkbox-container">
+                    <input type="checkbox" id="model_7"/>
+                    <label class="checkbox" for="model_7">Linux OS</label>
+                  </div>
+                  <div id="linux_6_container_model" style="display: none" class="checkbox-container">
+                    <input type="checkbox" id="model_8"/>
+                    <label class="checkbox" for="model_8">Linux OS</label>
+                  </div>
+                  <div id="linux_7_container_model" style="display: none" class="checkbox-container">
+                    <input type="checkbox" id="model_9"/>
+                    <label class="checkbox" for="model_9">Linux OS</label>
+                  </div>
+                </div>
+              </div>
+              <button id="show_more_model">
+                Ver más
+              </button>           
+            </div>
+          </div>        
+          <button id="show_more">
+            + Filtros
+          </button>
+        </div>
+      </div>
+		</div>
+	</div>
+	</main>
+
+</body>
+</html>
+<script type="text/javascript" src="js/main.js"></script>
